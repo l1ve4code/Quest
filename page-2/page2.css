@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 6em);
+  grid-template-rows: repeat(3, 6em);
+  grid-gap: 2px;
+}
+.grid__block{
+  border: 2px solid black;
+}
+.grid__block:nth-child(odd){
+  background-color: #787878;
+}
+.grid__block:nth-child(even){
+  background-color: #800000;
+}

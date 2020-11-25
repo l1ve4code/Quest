@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.grid__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px lightgray;
+  padding: 15px;
+  position: relative;
+}
+.card_overlay{
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 95%;
+  background-color: white;
+  position: absolute;
+  visibility: hidden;
+}
+.grid__card:hover > .card_overlay{
+  visibility: visible;
+}
