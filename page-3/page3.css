@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 6em);
+  grid-template-rows: repeat(3, 6em);
+  grid-gap: 2px;
+}
+.grid__block{
+  border: 2px solid black;
+}
+.grid__block:nth-child(1){
+  background-color: #800000;
+}
+.grid__block:nth-child(2n){
+  box-shadow: 0 0 5px 0 #ff3d3d;
+}
+.grid__block:nth-last-child(1){
+  background-color: #787878;
+}
